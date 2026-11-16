@@ -3,25 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>User Signup</h1>
+    <div class="container">
+      <h1>User Management</h1>
 
-    <form id="signupForm">
-      <input type="text" id="name" placeholder="Enter Name" required />
-      <br /><br />
+      <form id="userForm">
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter Username"
+          required
+        />
 
-      <input type="email" id="email" placeholder="Enter Email" required />
-      <br /><br />
+        <input type="email" id="email" placeholder="Enter Email" required />
 
-      <button type="submit">Signup</button>
-    </form>
+        <button type="submit" id="submitBtn">Add User</button>
+      </form>
 
-    <h2>All Users</h2>
+      <h2>All Users</h2>
 
-    <div id="usersList"></div>
+      <div id="usersList"></div>
+    </div>
 
-    <script type="module" src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
